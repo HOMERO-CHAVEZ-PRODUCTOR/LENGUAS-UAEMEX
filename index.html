@@ -190,18 +190,27 @@
             backdrop-filter: blur(4px);
         }
 
-        /* --- UBICACIÓN --- */
-        .location-box {
-            max-width: 850px;
+        /* --- UBICACIONES --- */
+        .locations-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 60px;
+            max-width: 1000px;
             margin: 0 auto 130px;
         }
 
-        .location-box h3 {
+        .location-item {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .location-item h3 {
             font-size: 2.5rem;
             margin-bottom: 20px;
         }
 
-        .location-box p { 
+        .location-item p { 
             font-size: 1.2rem; 
             margin-bottom: 45px; 
             font-weight: 300;
@@ -405,8 +414,8 @@
                 margin-bottom: 70px;
             }
 
-            .location-box { margin-bottom: 90px; }
-            .location-box h3 { font-size: 2.2rem; }
+            .locations-wrapper { gap: 80px; margin-bottom: 90px; }
+            .location-item h3 { font-size: 2.2rem; }
             
             .timeline-container, .menu-section, .recs-grid {
                 margin-top: 80px;
@@ -466,10 +475,18 @@
             <span>03</span> <span>07</span> <span>26</span>
         </div>
 
-        <div class="location-box reveal-node">
-            <h3>RECEPCIÓN</h3>
-            <p>Hacienda El Coecillo<br>Estado de México</p>
-            <a href="https://maps.app.goo.gl/qy1ywhmttgA7nzZz5" target="_blank" class="btn-olive">Ver Ubicación</a>
+        <div class="locations-wrapper reveal-node">
+            <div class="location-item">
+                <h3>MISA</h3>
+                <p>Iglesia de la Merced<br>03 de Julio | 17:00 HRS</p>
+                <a href="https://maps.app.goo.gl/6t5RSXCTTNkBgu2HA" target="_blank" class="btn-olive">Ver Ubicación</a>
+            </div>
+            
+            <div class="location-item">
+                <h3>RECEPCIÓN</h3>
+                <p>Hacienda El Coecillo<br>Estado de México</p>
+                <a href="https://maps.app.goo.gl/qy1ywhmttgA7nzZz5" target="_blank" class="btn-olive">Ver Ubicación</a>
+            </div>
         </div>
 
         <article class="timeline-container reveal-node">
